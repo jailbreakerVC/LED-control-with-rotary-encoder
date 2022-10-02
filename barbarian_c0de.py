@@ -2,6 +2,8 @@
 import time
 import board
 import neopixel
+import digitalio
+
 
 pixel_pin = board.GP28
 num_pixels = 30
@@ -19,11 +21,7 @@ COLORS=[RED,YELLOW,GREEN,CYAN,BLUE,PURPLE]
 number=0
 
 
-import board
-import digitalio
-
-
-
+#Pico
 dirPin = digitalio.DigitalInOut(board.GP16)
 stepPin = digitalio.DigitalInOut(board.GP17)
 dirPin.direction = digitalio.Direction.INPUT
